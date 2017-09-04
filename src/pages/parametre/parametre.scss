@@ -1,0 +1,27 @@
+page-parametre {
+    /* #back {
+        background-image: url(../assets/icon/newbkg.png);
+    }*/
+    #titre {
+        display: block;
+        font-size: 20px;
+        padding: 10px auto;
+        margin: 44px auto;
+        text-align: center;
+        color: white;
+    }
+    #bntq {
+        display: block;
+        padding: 25px;
+        margin: 34px auto;
+        width: 300px;
+        // vertical-align: left;
+    }
+    #ipt {
+        border: solid 0.6px blue;
+    }
+    #lst {
+        opacity: 0.6;
+        background: transparent !important;
+    }
+}

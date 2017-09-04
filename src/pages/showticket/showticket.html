@@ -1,0 +1,80 @@
+<ion-header>
+    <ion-navbar color='primary_'>
+        <ion-toolbar>
+            <!--<ion-title>{{branchename}}</ion-title>-->
+            <ion-title> {{'ModuleTicketPage.title' | translate }} </ion-title>
+            <div class="sub-title toolbar-title-md toolbar-title">{{client}} - {{branchename}} </div>
+        </ion-toolbar>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="has-header">
+
+    <div *ngIf="!iserror" class="page-content-default">
+        <div *ngIf="!iscalled && !isticketfinish">
+            <div class="page-message">
+                <!--{{'Showticketpage.note' | translate}}-->
+            </div>
+        </div>
+
+        <!--<div center *ngIf="showrang() && !iscalled && !isticketfinish ">-->
+        <div center *ngIf="!iscalled && !isticketfinish ">
+            <div *ngFor="let num of fakeArray; let i = index" class="col center-text queue-itm parent-center" [ngClass]="{ selected:SelctedPosition(num), other:!SelctedPosition(num), animselected:animatePosition(num)}">
+                <div [ngClass]="{'child-center': true, 'center-content' : !hilightSelcted}">
+                    <div class="box  ellipsis  reverse-ellipsis content-container-one">
+                        <div nowrap *ngIf='num != maxNumber ' class="ellipsis__content">
+                            <span>{{num}}</span>
+                            <sup *ngIf="num==1 && SelctedPosition(num)">{{'Showticketpage.position.first' | translate}}</sup>
+                            <sup *ngIf="num>1 && SelctedPosition(num)">{{'Showticketpage.position.other' | translate}}</sup>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="SelctedPosition(num) && num" class="content-container-two">
+                    <div class="ellipsis__content">{{'Showticketpage.yourposition' | translate}}</div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="iscalled && !isticketfinish">
+            <div class="page-message">{{'Showticketpage.yourturn' | translate:param }} </div>
+        </div>
+
+        <div *ngIf="!isticketfinish" class="ticket_container ticket_info parent-center parent-center:before">
+            <div class="child-center">
+                <div class="fadeIn ticket-text ticket-size-1 ticket_nmbr"> {{ticketNumber}}</div>
+                <div class="ticket-service-name"> {{sernam}} </div>
+            </div>
+        </div>
+
+        <button *ngIf="!iscalled" ion-button color="danger" round class="cancel-visit" (tap)='Cancelvisite()'>{{'Showticketpage.cancelviste' | translate}}</button>
+
+        <div *ngIf="isticketfinish">
+            <div class="page-message"> {{message}}</div>
+            <button ion-button round (tap)="home()" class="btn-default" color="secondary">{{'Showticketpage.okbtn' | translate}}</button>
+            <!--  <button ion-button class="new" (tap)="home()">{{'Showticketpage.okbtn' | translate}}</button>-->
+        </div>
+    </div>
+
+    <error *ngIf="iserror && !isticketfinish"></error>
+    <!--<error *ngIf="iserror && !isticketfinish" (click)="gevisitstatus(branchId, visitId,checksum);"></error>-->
+
+    <!-- <div *ngIf="isticketfinish">
+        <div class="fvisit">
+
+            <label class="labfin center">
+    Merci Pour votre visite
+           </label>
+
+            <ion-range min="0" max="10" pin="true" step="1" snaps="true" [(ngModel)]="text">
+                <ion-label range-left class="small-text">0</ion-label>
+                <ion-label range-right>10</ion-label>
+            </ion-range>
+            <ion-label>Dite nous un mot</ion-label>
+            <ion-textarea rows='5'></ion-textarea>
+            <div class="fbutton">
+                <button ion-button class="new" (tap)="home()">Valider</button>
+                <button ion-button outline class="feed">Ignorer</button> </div>
+        </div>
+    </div>-->
+
+</ion-content>

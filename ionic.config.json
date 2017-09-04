@@ -1,0 +1,14 @@
+{
+    "name": "EticketIonic",
+    "app_id": "7db534a7",
+    "proxies": [{
+            "path": "/api/",
+            "proxyUrl": "http://192.168.0.167:9090/MobileTicket/"
+        },
+        {
+            "path": "/api2/",
+            "proxyUrl": "http://192.168.0.167:8080/webAdmin/api/clients/sign/"
+        }
+    ],
+    "type": "ionic-angular"
+}

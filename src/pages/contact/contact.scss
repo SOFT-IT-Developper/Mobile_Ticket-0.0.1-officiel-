@@ -1,0 +1,113 @@
+page-contact {
+    #back {
+        background-image: url(../assets/icon/bkg.png);
+    }
+    .ticket_container {
+        background: url(../assets/icon/Ticket.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: contain;
+        height: 200px;
+        max-height: 350px;
+        margin-top: 12em;
+        margin-bottom: 2em;
+        // background-color: blue;
+    }
+    .ticket_nmbr {
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+    .ticket_info {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        display: table;
+        width: 100%;
+    }
+    .ticket_branch {
+        text-align: center;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        font-size: 1.2em !important;
+    }
+    .ticket-size-1 {
+        font-size: 62px !important;
+    }
+    .ticket-size-2 {
+        font-size: 62px !important;
+    }
+    .ticket-size-3 {
+        font-size: 62px !important;
+    }
+    .ticket-size-4 {
+        font-size: 50px !important;
+    }
+    .ticket-size-5 {
+        font-size: 39px !important;
+    }
+    .ticket-size-6 {
+        font-size: 39px !important;
+    }
+    .ticket-service-name {
+        color: black !important;
+        font-size: 20px !important;
+        width: 133px !important;
+        line-height: 24px;
+        word-break: break-all !important;
+        font-weight: 300 !important;
+    }
+    .ticket-remove-heading {
+        margin-top: 2em !important;
+        margin-bottom: 2em !important;
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .expand-view {
+        position: absolute;
+    }
+    .ticket-text {
+        width: 80%;
+        vertical-align: super;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .fadeIn {
+        visibility: visible !important;
+    }
+    .fadeOut {
+        visibility: hidden !important;
+    }
+    .v-center {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    .inside-margin {
+        height: 0;
+    }
+    .sub-heading-text-2 {
+        font-size: 20px;
+        color: #FFFFFF;
+        font-family: Nanami-Rounded-Light;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .child-center {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .parent-center:before {
+        content: '\200B';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}

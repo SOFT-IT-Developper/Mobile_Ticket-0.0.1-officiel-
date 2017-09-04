@@ -1,0 +1,10 @@
+    page-listagence {
+        .swipe-disabled div.item-content {
+            -webket-transition: none !important;
+            -webket-transform: none !important;
+            transform: none !important;
+        }
+        .hidecell {
+            display: none !important;
+        }
+    }

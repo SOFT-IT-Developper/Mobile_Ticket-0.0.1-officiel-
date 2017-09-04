@@ -1,0 +1,495 @@
+    //theme custom for moov
+    .mtn {
+        $colors: ( primary: rgba(2, 115, 155, 255), primary-text: #fff, secondary: rgba(255, 255, 255, 255), secondary-text: #000, danger: #f53d3d, light: #f4f4f4, dark: #222, tabbar: #1f7998);
+        .toolbar-background {
+            background-color: map-get($colors, primary);
+        }
+        .toolbar-title {
+            color: map-get($colors, primary-text);
+        }
+        .has-header {
+            background-image: url(../assets/icon/mtnbkg.png);
+            // background-image: url(../assets/icon/backgroundmtn.png);
+            //  background-image: url(../assets/icon/backgroudmoov.png);
+            // background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center; //  background-size: contain;
+            //background-color: red !important;
+        }
+        //btn accueil
+        /*.btnhome {
+// margin: 20px auto;
+display: block;
+size: 50px;
+padding: 10px auto 10px auto;
+margin: -1px auto;
+width: 85%;
+height: 78px;
+text-align: center;
+font-size: 15px;
+//  background-color: transparent !important;
+//   font-family: 'Nanami-Rounded-Medium';
+color: black;
+// color: white !important;
+background-color: rgba(248, 248, 248, 0.75);
+//font-size-adjust: 0.58;
+//text-align: left;
+// padding-right:10px;
+// margin: 10px 10px 10px 10px;
+// word-break: break-all !important;
+//font-weight: 200 !important;
+line-height: 24px;
+word-break: break-all !important;
+font-weight: 200 !important;
+}*/
+        // gestion erreur css
+        .page-content-error {
+            //  display: inline-block;
+            // display: table-cell;
+            margin-left: auto;
+            margin-right: auto;
+            align-content: center;
+            padding: 25px;
+            display: block;
+        }
+        .page-content-error .message-error {
+            text-align: center;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            padding: auto;
+            align-content: center;
+            color: white;
+            font-size: 20px;
+        }
+        .laberror {
+            font-size: 20px;
+            color: white;
+        }
+        .btn-default {
+            display: block !important;
+            padding: 1.625em !important;
+            margin: 1em auto !important;
+            /* width: 250px; */
+            font-family: Helvetica;
+            color: map-get($colors, secondary-text) !important;
+            background-color: map-get($colors, secondary) !important;
+            font-weight: lighter !important;
+        }
+        #global {
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+        /*entete
+.titre {
+display: block;
+font-size: 20px;
+padding: 10px auto;
+margin: 20px auto;
+text-align: center;
+color: white;
+background: transparent !important;
+//  font-family: 'Nanami-Rounded-Medium'
+}*/
+        .btn-custom1 {
+            display: block !important;
+            padding: 1.5em 0.5em !important;
+            margin: 1em auto !important;
+            text-align: center !important;
+            font-size: 1.5em !important;
+            color: map-get($colors, secondary-text) !important;
+            background-color: map-get($colors, secondary) !important;
+            width: 85% !important;
+            font-weight: lighter !important;
+            border-radius: 64px 64px 64px !important;
+        }
+        .btn-custom1[icon-right] ion-icon {
+            line-height: 1 !important;
+            padding-left: 0 !important;
+        }
+        .btn-custom1 .label-md {
+            margin: 0;
+        }
+        button.btn-custom1.round {
+            padding: 0.7em 1.2em!important;
+            border-radius: 64px;
+            padding-bottom: 2.5em !important;
+        }
+        .sub-title {
+            font-weight: lighter !important;
+            font-size: 14px !important;
+        }
+        .toolbar-content-ios .sub-title {
+            text-align: center;
+        }
+        .page-message {
+            display: block;
+            font-size: 20px;
+            padding: 0.25em;
+            margin: 0.5em auto;
+            text-align: center;
+            color: map-get($colors, secondary-text) !important;
+        }
+        *[no-padding] {
+            padding: 0px !important;
+        }
+        *[text-ellipsis] {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        *[nowrap] {
+            white-space: nowrap;
+        }
+        /***************************************************************************
+Bootstap Customization
+***************************************************************************/
+        /*.toolbar-title {
+            display: -webkit-box !important;
+        }*/
+        .list-md .item-block .item-inner {
+            border-bottom: none !important;
+        }
+        .ios ion-nav>.ion-page>ion-header>.toolbar.statusbar-padding:first-child ion-title {
+            height: inherit !important;
+            min-height: inherit !important;
+            padding: 0 !important;
+        }
+        .toolbar-title-ios.toolbar-title {
+            display: inline-block !important;
+        }
+        //*******************************************************************************************************************************
+        //********************* cette partie est specifique a chaque page  ***********************************************
+        //page service
+        .customer-waiting {
+            margin-left: auto;
+            margin-right: 10px;
+            display: block;
+            font-size: 25px
+        }
+        .customer-icon {
+            width: 30px; //custom moov
+            vertical-align: sub;
+            stroke: map-get($colors, secondary-text) !important;
+            ; //custom moov
+            padding: 1px;
+        }
+        .tick-container {
+            position: absolute;
+            right: 1.5em;
+            top: 34%
+        }
+        svg.tick {
+            position: relative;
+            top: 2px;
+            width: 18px;
+            visibility: hidden;
+        }
+        .tick-container-rtl {
+            position: absolute;
+            left: 18px;
+            top: 28%;
+        }
+        @media (max-width: 450px) {
+            .tick-container-rtl {
+                position: absolute;
+                left: 1.5em;
+                top: 34%
+            }
+        }
+        // page show ticket
+        .ion-scroll {
+            overflow: scroll;
+            white-space: nowrap;
+            background-color: blue;
+        }
+        .scrolll {
+            background-color: yellow;
+        }
+        //********************************************************
+        .ticket_container {
+            background: url(../assets/icon/Ticket.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: contain;
+            height: 45%;
+            max-height: 21.875em;
+            min-height: 16em;
+            margin-top: 1em;
+            // margin-top: 3em;
+            margin-bottom: 2em;
+            // background-color: blue;
+        }
+        .ticket_nmbr {
+            line-height: 100%;
+            margin-bottom: 10px;
+        }
+        .ticket_info {
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+            display: table;
+            width: 100%;
+        }
+        .ticket_branch {
+            text-align: center;
+            padding-bottom: 1em;
+            padding-top: 1em;
+            font-size: 1.2em !important;
+        }
+        .ticket-size-1 {
+            font-size: 62px !important;
+        }
+        .ticket-size-2 {
+            font-size: 62px !important;
+        }
+        .ticket-size-3 {
+            font-size: 40px !important;
+        }
+        .ticket-size-4 {
+            font-size: 50px !important;
+        }
+        .ticket-size-5 {
+            font-size: 39px !important;
+        }
+        .ticket-size-6 {
+            font-size: 29px !important;
+        }
+        .ticket-service-name {
+            margin-top: 0.5em;
+            color: black !important;
+            font-size: 20px !important;
+            width: 10em !important;
+            line-height: 24px;
+            // word-break: break-all !important;
+            font-weight: 200 !important;
+        }
+        .ticket-remove-heading {
+            margin-top: 2em !important;
+            margin-bottom: 2em !important;
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .expand-view {
+            position: absolute;
+        }
+        .ticket-text {
+            //  width: 80%;
+            vertical-align: super;
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .fadeIn {
+            visibility: visible !important;
+        }
+        .fadeOut {
+            visibility: hidden !important;
+        }
+        .v-center {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        .inside-margin {
+            height: 0;
+        }
+        .sub-heading-text-2 {
+            font-size: 20px;
+            color: #FFFFFF;
+            //  font-family: Nanami-Rounded-Light;
+            width: 75%;
+            margin: 0 auto;
+        }
+        .child-center {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .parent-center:before {
+            content: '\200B';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        *[center] {
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+        ///queut info
+        .queue-itm {
+            display: inline-block;
+            color: black;
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+        .center-content {
+            position: relative;
+            right: 2px;
+        }
+        .queue-itm.empty {
+            background: lightslategrey;
+            opacity: 0.25;
+            width: 8.5vw;
+            height: 8.5vw;
+            font-size: 16px;
+            max-width: 40px;
+            max-height: 40px;
+        }
+        .queue-itm.other {
+            background: lightslategrey;
+            width: 8.5vw;
+            height: 8.5vw;
+            font-size: 16px;
+            max-width: 40px;
+            max-height: 40px;
+            text-align: -webkit-center;
+        }
+        .queue-itm.selected {
+            background: map-get($colors, primary);
+            ;
+            //  font-weight: 500;
+            font-size: 17px;
+            width: 12vw;
+            height: 12vw;
+            max-width: 50px;
+            max-height: 50px;
+            display: inline-table;
+            color: white;
+        }
+        .queue-itm.animselected {
+            animation: pulse-selected 2s;
+        }
+        .content-container-one,
+        .content-container-two {
+            display: table-row;
+            vertical-align: middle;
+        }
+        .content-container-one>div,
+        .content-container-two>div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .guichet {
+            font-size: 25px;
+            color: white;
+            vertical-align: middle;
+            text-align: center;
+            font-family: 'Nanami-Rounded-Medium';
+        }
+        /* Animation */
+        @keyframes pulse-other {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes pulse-selected {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .labfin {
+            color: white;
+            font-size: 25px;
+            vertical-align: middle;
+            text-align: center;
+            font-family: 'Nanami-Rounded-Medium';
+        }
+        .fvisit {
+            display: block;
+            //   margin: 10px auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        /* .fvisit button {
+        color: red;
+        font-size: 25px;
+        padding-top: 9px;
+        padding-left: 109px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }*/
+        .fbutton {
+            max-height: 350px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        .feed {
+            padding: 10px auto;
+            margin: 20px auto;
+            margin-left: 20px;
+            font-family: Helvetica;
+            color: rgba(1, 255, 77, 0.81);
+        }
+        .new {
+            font-family: Helvetica;
+            padding: 10px auto;
+            margin: 20px auto;
+            color: rgba(1, 255, 77, 0.81);
+            background-color: rgba(14, 94, 232, 0.46);
+            margin-left: 20px;
+        }
+        /* Media Queries */
+        @media (max-width: 400px) {
+            .queue-itm.other {
+                background: lightslategrey;
+                width: 8.5vw;
+                height: 8.5vw;
+                font-size: 13px;
+                max-width: 35px;
+                max-height: 35px;
+                text-align: -webkit-center;
+            }
+            .queue-itm.selected {
+                background: map-get($colors, primary);
+                ;
+                //  font-weight: 500;
+                font-size: 15px;
+                width: 12vw;
+                height: 12vw;
+                max-width: 45px;
+                max-height: 45px;
+                display: inline-table;
+                color: white;
+            }
+        }
+        .cancel-visit {
+            display: block;
+            padding: 25px;
+            margin: 34px auto;
+            width: 250px;
+            font-family: Helvetica;
+        }
+        /***************************************************************************
+            Bootstap Customization
+        ***************************************************************************/
+        .content-ios .btn-custom1 {
+            font-weight: normal !important;
+        }
+        .bar-button-default-md,
+        .bar-button-clear-md-default,
+        .bar-button-md-default,
+        .bar-button-default-ios,
+        .bar-button-default.bar-button-ios-default,
+        .bar-button-clear-ios-default {
+            color: map-get($colors, primary-text) !important;
+        }
+    }

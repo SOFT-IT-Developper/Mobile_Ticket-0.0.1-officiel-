@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar color='primary_'>
+        <ion-toolbar>
+            <!--<ion-title>{{branchename}}</ion-title>-->
+            <ion-title> {{'ModuleTicketPage.title' | translate }} </ion-title>
+            <div class="sub-title toolbar-title-md toolbar-title">{{client}} </div>
+        </ion-toolbar>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="has-header">
+    <div>
+        <p id="titre"><strong> Bienvenue dans E-Ticket</strong></p>
+    </div>
+    <ion-list>
+        <ion-item>
+            <ion-label fixed id="lab">Numéro</ion-label>
+            <ion-input type="text" [(ngModel)]='num' value="{{num}}" placeholder="+229 00 00 00" id="ipt"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button color="royal" round id="bntq" (tap)='modifnum()'>Modifier</button>
+</ion-content>

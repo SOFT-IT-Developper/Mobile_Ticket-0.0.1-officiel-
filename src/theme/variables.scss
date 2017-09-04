@@ -1,0 +1,111 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+@import "ionic.globals";
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+//$colors: ( primary:rgba(131, 20, 48, 255), primary-text:#fff, secondary: rgba(248, 248, 248, 0.75), danger: #f53d3d, light: #f4f4f4, dark: #222, tabbar: #1f7998);
+// App iOS Variables
+//primary : #387ef5
+// --------------------------------------------------
+// iOS only Sass variables can go here
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default";
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+@import "ionic.ionicons";
+// Fonts
+// --------------------------------------------------
+@import "roboto";
+@import "noto-sans";
+// Themes
+//--------------------------------------------------
+@import "default";
+@import "moov";
+@import "mtn";
+.toast-error .toast-wrapper {
+    background-color: #f53d3d !important;
+    // color: #f53d3d;
+}
+
+.icon-custom {
+    padding-top: 5px !important;
+}
+
+
+/*.page-content-error div {
+    display: block!important;
+    margin: 0 auto!important;
+    padding: 3em !important;
+}*/
+
+
+/***************************************************************************
+    Bootstap Customization
+***************************************************************************/
+
+.toolbar-title {
+    // display: -webkit-box !important;
+    text-align: left;
+}
+
+.list-md .item-block .item-inner {
+    border-bottom: none !important;
+}
+
+.item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: none !important;
+}
+
+.ios ion-nav>.ion-page>ion-header>.toolbar.statusbar-padding:first-child ion-title {
+    height: inherit !important;
+    min-height: inherit !important;
+    padding: 0 !important;
+}
+
+.toolbar-title-ios.toolbar-title {
+    display: inline-block !important;
+}
+
+.toolbar-ios ion-title {
+    position: relative !important;
+    padding: 0 !important;
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border-width: 0 !important;
+}
+
+.bar-button-default-md,
+.bar-button-clear-md-default,
+.bar-button-md-default,
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default {
+    color: map-get($colors, primary-text) !important;
+}

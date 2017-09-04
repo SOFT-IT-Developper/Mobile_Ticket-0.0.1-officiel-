@@ -1,0 +1,50 @@
+{
+    "Homepage": {
+        "bienvenu": " Welcome in E-Ticket",
+        "Bpriseticket": "Take Ticket",
+        "Bpriserdv": "Prise de de Rendez-vous",
+        "Bsclient": "Service client",
+        "Bmarketing": "Context marketing",
+        "Bsetting": "Parametre",
+        "titles": "E-Ticket"
+
+    },
+
+    "Servicepage": {
+        "nameservice": " SERVICE",
+        "Bpriseticket": "Prise de Ticket",
+        "titles": "E-Ticket Services"
+
+    },
+    "Listeagencepage": {
+        "nameagence": " AGENCES",
+        "namepage": "Branche"
+
+    },
+    "Showticketpage": {
+        "cancelviste": " Annuler le Ticket",
+        "Bpriseticket": "Prise de Ticket",
+        "yourposition": "Vous",
+        "note": "SVP Veuillez Patientiez...  ",
+        "namepage": "Votre Place est "
+
+    },
+    "Contactpage": {
+        "namepage": "Contact",
+        "sign": "SOFT IT @2017"
+    },
+    "Geolocalisationpage": {
+        "namepage": "Geolocalisation",
+        "titles": "SOFT IT @2017",
+        "continus": "Continuer"
+    },
+    "Dialogue": {
+        "titlenotif": "Notification",
+        "titlecancel": "Annuler la visite",
+        "massagenofif": "Vous ete attendu au ",
+        "massagecancel": "Voulez-vous vrament annuler votre Ticket ?",
+        "oknotif": "ok",
+        "cancelbuttonnotif": "non",
+        "okcancel": "Oui"
+    }
+}

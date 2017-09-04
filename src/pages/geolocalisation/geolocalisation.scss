@@ -1,0 +1,41 @@
+        page-geolocalisation {
+            .center {
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            #idadr {
+                font-size: 20px;
+            }
+            #grid {
+                margin-top: 150px;
+                ///  background-color: blue;
+            }
+            #bntq {
+                display: block;
+                padding: 25px;
+                margin: 34px auto;
+                width: 300px;
+            }
+            .back {
+                background-image: url(../assets/icon/bkg.png);
+            }
+            h1 {
+                color: white;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+            .div1 {
+                // margin: 0 auto;
+                padding: 0 auto;
+            }
+            .image {
+                display: block;
+                margin: 50px auto;
+            }
+            label {
+                color: white;
+            }
+        }

@@ -1,0 +1,30 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{'Geolocalisationpage.namepage' | translate}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="back">
+    <h1> {{'Homepage.bienvenu' | translate}} </h1>
+    <div class="div1">
+        <img src="assets/img/logo.jpg" alt="15" class="image" />
+    </div>
+    <ion-grid id="gird">
+        <ion-row class="center">
+            <ion-col col-3 id="idadr"> <label>{{adr}}</label></ion-col>
+            <ion-col col-3>
+                <input name="numero" [(ngModel)]='prefix' value="{{prefix}}" placeholder="+229" style="width: 55px" />
+            </ion-col>
+            <ion-col col-3><input name="numero" [(ngModel)]='num' value="{{num}}" placeholder="Numero" /> </ion-col>
+        </ion-row>
+        <ion-row>
+            <button ion-button color="danger" round id="bntq" (tap)='continus()'>{{'Geolocalisationpage.continus' | translate}}</button>
+        </ion-row>
+
+
+    </ion-grid>
+
+</ion-content>
